@@ -101,20 +101,20 @@
       let location = returnBibleAddress(nextverse);
     
       addressDiv.innerHTML = "<p>Where is it?</p>";
-      addressDiv.style.background = 'rgb(210, 240, 240)';
+      addressDiv.style.background = 'rgb(46, 189, 255)';
       missingWordDiv.innerHTML = "<p>What word is missing?</p>";
-      missingWordDiv.style.background = 'rgb(210, 240, 240)';
+      missingWordDiv.style.background = 'rgb(46, 189, 255)';
     
       verseDiv.innerHTML = `<p>${puzzled[1]}</p>`;  
     
       addressDiv.onclick = () => {
         addressDiv.innerHTML = `<p>${location}</p>`;
-        addressDiv.style.background = 'rgb(232, 252, 255)';
+        addressDiv.style.background = 'rgb(111, 197, 255)';
       }
     
       missingWordDiv.onclick = () => {
         missingWordDiv.innerHTML = `<p>${puzzled[0]}</p>`;
-        missingWordDiv.style.background = 'rgb(232, 252, 255)';
+        missingWordDiv.style.background = 'rgb(111, 197, 255)';
         verseDiv.innerHTML = `<p>${puzzled[2]}</p>`; 
       }
     }
